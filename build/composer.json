@@ -1,0 +1,91 @@
+{
+    "authors": [
+        {
+            "name": "UNB Libraries libsupport@unb.ca",
+            "role": "Creator"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        }
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "description": "Project definition for hit.lib.unb.ca",
+    "extra": {
+        "enable-patching": true,
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ]
+        },
+        "patches": {
+        }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "name": "unblibraries/hit.lib.unb.ca",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/unb-libraries/drupal-dev-libs.git"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2.0",
+        "cweagans/composer-patches": "~1.6.1",
+        "drupal-composer/drupal-scaffold": "~2.2.0",
+        "drupal/bootstrap": "3.6",
+        "drupal/console": "~1.0",
+        "drupal/core": "8.3.7",
+        "drush/drush": "~8.1.10",
+        "webflo/drupal-finder": "^0.3.0",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+        "unblibraries/drupal-dev-libs": "master"
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ]
+    },
+    "type": "project"
+}
