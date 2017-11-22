@@ -65,6 +65,7 @@
         "drupal/bootstrap": "3.6",
         "drupal/console": "~1.0",
         "drupal/core": "8.4.2",
+        "drupal/redis": "1.0-rc2",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
     },
