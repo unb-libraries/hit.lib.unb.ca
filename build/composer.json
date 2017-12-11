@@ -63,7 +63,7 @@
         "drupal-composer/drupal-scaffold": "~2.2.0",
         "drupal/bootstrap": "3.6",
         "drupal/console": "~1.0",
-        "drupal/core": "8.4.2",
+        "drupal/core": "8.4.3",
         "drupal/redis": "1.0-rc2",
         "drush/drush": "^8.1.15",
         "webflo/drupal-finder": "^0.3.0",
