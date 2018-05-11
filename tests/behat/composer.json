@@ -1,6 +1,6 @@
 {
   "license": "MIT",
-  "name": "unblibraries/hit.lib.unb.ca-tests",
+  "name": "unb-libraries/hit.lib.unb.ca-tests",
   "description": "Libraries for behat testing for hit.lib.unb.ca.",
   "authors": [
     {

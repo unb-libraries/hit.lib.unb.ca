@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "minimum-stability": "stable",
-  "name": "unblibraries/hit.lib.unb.ca",
+  "name": "unb-libraries/hit.lib.unb.ca",
   "description": "Provision/scaffolding for developing drupal instance.",
   "config": {
     "preferred-install": {
