@@ -45,7 +45,7 @@
     },
     "license": "MIT",
     "minimum-stability": "stable",
-    "name": "unb-libraries/hit.lib.unb.ca",
+    "name": "unb-libraries/hit.lib.unb.ca-drupal8",
     "repositories": [
         {
             "type": "composer",
