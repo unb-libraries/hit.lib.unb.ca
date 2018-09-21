@@ -1,4 +1,4 @@
-version: '3'
+version: '3.6'
 
 services:
   mysql:
@@ -9,6 +9,8 @@ services:
       - ./env/mysql.env
     expose:
      - "3306"
+    networks:
+     - hit.lib.unb.ca
 
   hit.lib.unb.ca:
     build:
@@ -23,6 +25,8 @@ services:
       - "80"
     ports:
       - "3094:80"
+    networks:
+     - hit.lib.unb.ca
     env_file:
       - ./env/drupal.env
     volumes:
@@ -30,3 +34,7 @@ services:
       - ./custom/modules:/app/modules/custom
       - ./custom/themes:/app/themes/custom
       - ./tests:/app/tests
+
+networks:
+  hit.lib.unb.ca:
+    name: hit.lib.unb.ca
