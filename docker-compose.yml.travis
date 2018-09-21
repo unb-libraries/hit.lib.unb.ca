@@ -8,9 +8,9 @@ services:
     env_file:
       - ./env/mysql.env
     expose:
-     - "3306"
+      - "3306"
     networks:
-     - hit.lib.unb.ca
+      - hit.lib.unb.ca
 
   hit.lib.unb.ca:
     image: hit.lib.unb.ca:latest
@@ -23,7 +23,7 @@ services:
     ports:
       - "80:80"
     networks:
-     - hit.lib.unb.ca
+      - hit.lib.unb.ca
     env_file:
       - ./env/drupal.env
 
