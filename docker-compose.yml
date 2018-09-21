@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   mysql:
@@ -17,6 +17,8 @@ services:
         - COMPOSER_DEPLOY_DEV=dev
     restart: always
     container_name: hit.lib.unb.ca
+    depends_on:
+      - mysql
     expose:
       - "80"
     ports:
