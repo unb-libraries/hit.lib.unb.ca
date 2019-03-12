@@ -44,7 +44,8 @@
         "patches": {}
     },
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "name": "unb-libraries/hit.lib.unb.ca",
     "repositories": [
         {
