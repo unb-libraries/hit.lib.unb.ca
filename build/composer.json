@@ -55,7 +55,7 @@
     ],
     "require": {
         "drupal/bootstrap": "3.6",
-        "drupal/core": "8.7.0",
+        "drupal/core": "8.7.1",
         "unb-libraries/drupal-builder": "^8.0.0"
     },
     "require-dev": {
