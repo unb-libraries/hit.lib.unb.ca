@@ -41,7 +41,11 @@
                 "type:drupal-theme"
             ]
         },
-        "patches": {}
+        "patches": {
+            "drupal/bootstrap_barrio": {
+                "Fix CSS library 404": "https://www.drupal.org/files/issues/2019-02-19/3033946-6.patch"
+            }
+        }
     },
     "license": "MIT",
     "minimum-stability": "dev",
@@ -54,8 +58,8 @@
         }
     ],
     "require": {
-        "drupal/bootstrap": "3.6",
-        "drupal/core": "8.7.5",
+        "drupal/bootstrap_barrio": "4.22",
+        "drupal/core": "8.7.6",
         "unb-libraries/drupal-builder": "^8.0.0"
     },
     "require-dev": {
