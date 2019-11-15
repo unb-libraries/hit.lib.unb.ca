@@ -60,6 +60,9 @@
     "require": {
         "drupal/bootstrap_barrio": "4.22",
         "drupal/core": "8.7.9",
+        "drupal/search_api": "1.14",
+        "drupal/search_api_autocomplete": "1.2",
+        "drupal/search_api_solr": "3.4",
         "unb-libraries/drupal-builder": "^8.0.0"
     },
     "require-dev": {
