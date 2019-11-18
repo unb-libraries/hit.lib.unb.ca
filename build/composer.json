@@ -61,7 +61,7 @@
         "drupal/bootstrap_barrio": "4.22",
         "drupal/core": "8.7.10",
         "drupal/health_check": "1.1",
-        "drupal/redis": "1.1",
+        "drupal/redis": "1.2",
         "drupal/search_api": "1.14",
         "drupal/search_api_autocomplete": "1.2",
         "drupal/search_api_solr": "3.4",
