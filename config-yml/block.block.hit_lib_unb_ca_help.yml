@@ -1,0 +1,22 @@
+uuid: 7c8b0bdb-913a-4c1d-a1be-309c76334c5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - hit_lib_unb_ca
+_core:
+  default_config_hash: JPtjio142VL7z1Y-K1aWkTXu5wId7r4-zNUHozwLqf0
+id: hit_lib_unb_ca_help
+theme: hit_lib_unb_ca
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

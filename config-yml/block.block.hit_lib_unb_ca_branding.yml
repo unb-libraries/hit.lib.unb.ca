@@ -1,17 +1,17 @@
-uuid: c61f0342-e552-45a4-a823-92c715a0d274
+uuid: 4743f6b8-42d3-43cc-9df1-848718444cfd
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - hit_lib_unb_ca
 _core:
-  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
-id: bootstrap_barrio_branding
-theme: bootstrap_barrio
+  default_config_hash: 0XmTH5dbJRl-fsDBgX10MzeFMarkhKpzU7ZGdGPfAMU
+id: hit_lib_unb_ca_branding
+theme: hit_lib_unb_ca
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:
@@ -21,5 +21,5 @@ settings:
   label_display: '0'
   use_site_logo: true
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

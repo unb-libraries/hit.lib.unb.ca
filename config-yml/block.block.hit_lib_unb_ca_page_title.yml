@@ -1,15 +1,15 @@
-uuid: 337b20d0-0162-4448-9a32-0dd41e9e0746
+uuid: 29ca173b-966f-4f1e-9dd7-42685771ddf9
 langcode: en
 status: true
 dependencies:
   theme:
-    - bootstrap_barrio
+    - hit_lib_unb_ca
 _core:
-  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
-id: bootstrap_barrio_page_title
-theme: bootstrap_barrio
+  default_config_hash: _0ZyPKUqcQMu9FlcCoa_Y-No4zdv-wUNF4hlSj60yi0
+id: hit_lib_unb_ca_page_title
+theme: hit_lib_unb_ca
 region: content
-weight: -30
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

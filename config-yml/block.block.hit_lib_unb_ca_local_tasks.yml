@@ -1,0 +1,22 @@
+uuid: 2fdddc9c-c25c-45bf-ad12-7acacc1e8dc5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hit_lib_unb_ca
+_core:
+  default_config_hash: IzSbK3zk-Gon9y7WLEWop15Wn__7LeKzBJIXqajlb00
+id: hit_lib_unb_ca_local_tasks
+theme: hit_lib_unb_ca
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

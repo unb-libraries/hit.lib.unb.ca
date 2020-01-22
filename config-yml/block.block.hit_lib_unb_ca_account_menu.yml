@@ -1,0 +1,27 @@
+uuid: 02a914ce-552b-4b26-9692-1cc8f2a9006c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - hit_lib_unb_ca
+_core:
+  default_config_hash: bSenKfxHQ1-_DHnPlsMsap_D6fif7bbe3kh9k31LkdU
+id: hit_lib_unb_ca_account_menu
+theme: hit_lib_unb_ca
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -58,8 +58,9 @@
         }
     ],
     "require": {
-        "drupal/bootstrap_barrio": "4.22",
+        "drupal/bootstrap4": "1.0-rc2",
         "drupal/core": "8.8.1",
+        "drupal/google_analytics": "2.4",
         "drupal/health_check": "1.2",
         "drupal/redis": "1.2",
         "drupal/search_api": "1.14",
