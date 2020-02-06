@@ -1,6 +1,6 @@
 uuid: 02a914ce-552b-4b26-9692-1cc8f2a9006c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -13,7 +13,7 @@ _core:
 id: hit_lib_unb_ca_account_menu
 theme: hit_lib_unb_ca
 region: header
-weight: -7
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:

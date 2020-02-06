@@ -9,10 +9,14 @@
       "*": "dist"
     }
   },
-  "require": {
-    "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x"
-  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
   "require-dev": {
+    "drupal/bootstrap4": "1.0-rc2",
     "unb-libraries/dockworker-drupal": "~3"
   },
   "scripts": {

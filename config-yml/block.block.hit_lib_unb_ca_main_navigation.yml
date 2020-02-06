@@ -12,8 +12,8 @@ _core:
   default_config_hash: 35BFwuaW_wb2mnnYk1tNg7T9Ro9RaewrCqOTtyQ7VJE
 id: hit_lib_unb_ca_main_navigation
 theme: hit_lib_unb_ca
-region: header
-weight: 0
+region: navigation
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:
