@@ -81,11 +81,8 @@
         {% endif %}
         <div class="d-print-block row">
             {% if page.sidebar_first %}
-                <div class="{{ sidebar_first_classes }}" aria-label="{{ 'Search / Browse'|t }}" role="complementary">
+                <div class="{{ sidebar_first_classes }}">
                     {{ page.sidebar_first }}
-                    <div class="abc-overlay my-4 text-center">
-                        <img class="img-fluid" src="/themes/custom/nble_lib_unb_ca/images/abc-overlay.png" alt="">
-                    </div>
                 </div>
             {% endif %}
             <div class="{{ content_classes }}" role="main">

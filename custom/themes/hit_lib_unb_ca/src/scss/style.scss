@@ -13,10 +13,18 @@ header {
     background: #000;
   }
 
-  .navbar-brand {
-    font-family: 'ProximaNova-Bold', 'Montserrat', Helvetica, Arial, sans-serif;
-    font-weight: 700;
+
+main {
+  h1 {
+    text-transform: uppercase;
   }
+}
+
+.navbar-brand, h1.page-title {
+  font-family: 'ProximaNova-Bold', 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
 }
 
 footer {
