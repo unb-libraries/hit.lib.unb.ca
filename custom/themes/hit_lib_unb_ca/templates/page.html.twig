@@ -53,6 +53,7 @@
         {{ page.header }}
     </div>
     <nav class="container navbar navbar-expand-lg navbar-{{ b4_navbar_schema }} bg-{{ b4_navbar_bg_schema }} p-1" role="navigation">
+        <a class="navbar-brand" href="/">History of IT at UNB</a>
         <button class="navbar-toggler"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
         data-toggle="collapse" data-target="#navbarSupportedContent" type="button">
@@ -60,8 +61,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
-            <div class="navbar-nav mx-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="navbar-nav">
                 <div class="form-inline">
                     {{ page.navigation }}
                 </div>
@@ -102,10 +103,10 @@
 <footer>
     <div class="container">
         <div class="row align-items-center py-2 text-white" role=”contentinfo”>
-            <div class="col-12 mt-3 text-center col-sm-6 mt-sm-0 text-sm-left">
+            <div class="col-12 mt-3 text-center col-md-6 mt-md-0 text-md-left">
                 <span>&copy; {{ 'now'|date('Y') }} {{ 'University of New Brunswick'|t }}</span>
             </div>
-            <div class="col-12 text-center col-sm-6 text-sm-right">
+            <div class="col-12 text-center col-md-6 text-md-right">
                 <a class="d-inline-block" href="//lib.unb.ca" target="_blank">
                     <img alt="UNB Libraries" class="unb-lib-logo" src="/{{ directory }}/images/unb_libraries_red_white.png">
                 </a>
