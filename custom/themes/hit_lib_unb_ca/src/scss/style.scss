@@ -12,6 +12,42 @@ header {
   nav.navbar-dark {
     background: #000;
   }
+}
+
+#intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(../../images/intro-bg.jpg) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  h1 {
+    font-size: 70px;
+
+    span {
+      display: block;
+      font-size: medium;
+    }
+  }
+
+  .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .intro-text {
+    font-size: 26px;
+  }
+}
+
+
 
 
 main {
@@ -20,11 +56,14 @@ main {
   }
 }
 
-.navbar-brand, h1.page-title {
+h1.page-title {
+  text-align: left;
+}
+
+.navbar-brand, h1 {
   font-family: 'ProximaNova-Bold', 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #fff;
-  text-align: left;
 }
 
 footer {

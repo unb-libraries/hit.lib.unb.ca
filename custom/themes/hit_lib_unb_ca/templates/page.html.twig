@@ -71,6 +71,24 @@
     </nav>
 </header>
 
+{% if is_front %}
+<section id="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="brand-heading">History of Information Technology <span>at The University of New Brunswick</span></h1>
+          <p class="intro-text my-5">Creating an archive documenting the impact of information technology on all aspects of campus life.</p>
+          <a href="#main-content" class="btn btn-danger btn-lg page-scroll">
+              Learn More <i class="fa fa-chevron-circle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <main>
     {# Link target is in html.html.twig #}
     <a id="main-content" tabindex="-1"></a>
