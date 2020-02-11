@@ -1,2 +1,15 @@
 // Include custom sub theme.
 @import 'import';
+
+body {
+  font-family: 'ProximaNova-Regular', 'Montserrat', Helvetica, Arial, sans-serif;
+  background: $bg-page;
+}
+
+header {
+  border-bottom: 1px solid $footer-bg-color;
+}
+
+footer {
+  background-color: $footer-bg-color;
+}
