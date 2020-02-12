@@ -12,6 +12,10 @@ header {
   nav.navbar-dark {
     background: #000;
   }
+
+  nav .dropdown-menu .is-active {
+    background-color: #777;
+  }
 }
 
 header, footer {
