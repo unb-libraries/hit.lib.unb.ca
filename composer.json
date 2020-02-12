@@ -16,7 +16,7 @@
     }
   ],
   "require-dev": {
-    "drupal/bootstrap4": "1.0-rc2",
+    "drupal/bootstrap4": "1.0-rc4",
     "unb-libraries/dockworker-drupal": "~3"
   },
   "scripts": {
