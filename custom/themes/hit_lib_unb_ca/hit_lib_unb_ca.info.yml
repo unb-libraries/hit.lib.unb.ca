@@ -5,8 +5,8 @@ package: 'hit_lib_unb_ca'
 description: 'For hit_lib_unb_ca'
 base theme: bootstrap4
 
-libraries:
-  - hit_lib_unb_ca/global-styling
+libraries-override:
+  - bootstrap4/global-styling: hit_lib_unb_ca/global-styling
 
 regions:
   header: Header
