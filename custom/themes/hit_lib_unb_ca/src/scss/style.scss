@@ -64,8 +64,10 @@ main {
     border-bottom: 1px solid #e0e0e0;
   }
 
-  h1 {
+  h1, h2, h3, h4 {
+    font-family: 'ProximaNova-Bold', 'Montserrat', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   a:not([role="button"]) {
@@ -89,7 +91,7 @@ h1.page-title {
   text-align: left;
 }
 
-.navbar-brand, h1 {
+.navbar-brand {
   font-family: 'ProximaNova-Bold', 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #fff;
