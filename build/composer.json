@@ -56,7 +56,7 @@
         "drupal/bootstrap4": "1.0-rc6",
         "drupal/core": "8.9.0",
         "drupal/fontawesome": "2.16",
-        "drupal/google_analytics": "2.4",
+        "drupal/google_analytics": "2.5",
         "drupal/health_check": "1.2",
         "drupal/redis": "1.4",
         "drupal/search_api": "1.17",
