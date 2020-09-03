@@ -42,7 +42,7 @@ module:
   views_ui: 0
   menu_link_content: 1
   views: 10
-  hit: 1000
+  minimal: 1000
 theme:
   stark: 0
   stable: 0
@@ -51,6 +51,6 @@ theme:
   seven: 0
   bootstrap4: 0
   hit_lib_unb_ca: 0
-profile: hit
+profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
