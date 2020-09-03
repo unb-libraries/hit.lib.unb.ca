@@ -4,8 +4,6 @@ services:
   hit.lib.unb.ca:
     build:
       context: .
-      args:
-        - COMPOSER_DEPLOY_DEV=dev
     restart: always
     container_name: hit.lib.unb.ca
     expose:
@@ -17,6 +15,7 @@ services:
     networks:
       - hit.lib.unb.ca
     volumes:
+      - /app/html/sites/default
       - ./config-yml:/app/configuration
       - ./custom/modules:/app/html/modules/custom
       - ./custom/themes:/app/html/themes/custom
