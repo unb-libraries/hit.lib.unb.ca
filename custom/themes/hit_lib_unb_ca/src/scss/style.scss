@@ -11,6 +11,15 @@ header {
 
   nav.navbar-dark {
     background: #000;
+
+    .dropdown-menu .nav-link {
+      color: #000;
+    }
+
+    .dropdown-menu .nav-link:hover,
+    .dropdown-menu .nav-link:focus {
+      background-color: #777;
+    }
   }
 
   nav .dropdown-menu .is-active {
