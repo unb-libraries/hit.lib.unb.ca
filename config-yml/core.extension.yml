@@ -9,7 +9,6 @@ module:
   contact: 0
   contextual: 0
   datetime: 0
-  dblog: 0
   dynamic_page_cache: 0
   editor: 0
   editor_file: 0
