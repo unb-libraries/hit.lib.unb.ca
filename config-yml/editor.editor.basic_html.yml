@@ -6,6 +6,14 @@ dependencies:
     - filter.format.basic_html
   module:
     - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: media/documents
+    extensions: 'csv doc docx pdf ppt pptx rtf txt xls xlsx zip'
+    max_size: ''
 format: basic_html
 editor: ckeditor
 settings:
@@ -15,26 +23,45 @@ settings:
         -
           name: Formatting
           items:
+            - Undo
+            - Redo
+            - Format
+            - '-'
+            - RemoveFormat
             - Bold
             - Italic
+            - Blockquote
+            - HorizontalRule
+        -
+          name: Alignment
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
         -
           name: Links
           items:
             - DrupalLink
             - DrupalUnlink
         -
-          name: Lists
+          name: 'Lists and Tables'
           items:
+            - Table
             - BulletedList
             - NumberedList
+            - Outdent
+            - Indent
         -
-          name: Media
+          name: 'Media and Characters'
           items:
-            - Blockquote
-            - DrupalImage
+            - DrupalFile
+            - DrupalMediaLibrary
+            - DrupalFontAwesome
+            - SpecialChar
         -
-          name: Tools
+          name: Actions
           items:
+            - Maximize
             - Source
   plugins:
     language:
