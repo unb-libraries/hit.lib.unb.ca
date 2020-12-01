@@ -5,6 +5,7 @@ dependencies:
   module:
     - editor
     - media
+    - video_embed_wysiwyg
 _core:
   default_config_hash: uf2SHb9XN0LzMPIBg6indJkQ0x3SQszWrPA2imxqmv0
 name: 'Basic HTML'
@@ -15,7 +16,7 @@ filters:
     id: filter_html
     provider: filter
     status: true
-    weight: -10
+    weight: -50
     settings:
       allowed_html: '<a href class id target title aria-controls aria-expanded aria-selected hreflang data-entity-substitution data-entity-type data-entity-uuid data-toggle role> <address class> <blockquote cite> <br> <button aria-controls aria-expanded aria-haspopup aria-label class data-dismiss data-reference data-target data-toggle id type> <caption class> <cite> <code> <div class data-parent id role aria-labelledby> <dd class id> <dl class id> <drupal-entity alt class title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <drupal-media data-align data-caption data-entity-type data-entity-uuid data-view-mode> <dt class id> <em class> <h2 class id> <h3 class id> <h4 class id> <h5 class id> <h6 class id> <hr class> <img class src alt width height data-entity-type data-entity-uuid data-align data-caption> <li class id> <ol class id start type> <p class id> <span aria-hidden class> <strong> <sub> <sup> <table class id> <tbody class> <td class colspan id rowspan> <tfoot> <th class colspan id rowspan scope> <thead class> <tr class id> <ul class id type role>'
       filter_html_help: false
@@ -24,32 +25,63 @@ filters:
     id: filter_align
     provider: filter
     status: true
-    weight: 7
+    weight: -49
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: 8
+    weight: -48
     settings: {  }
   filter_html_image_secure:
     id: filter_html_image_secure
     provider: filter
     status: true
-    weight: 9
+    weight: -47
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: true
-    weight: 11
+    weight: -46
     settings: {  }
   media_embed:
     id: media_embed
     provider: media
     status: true
-    weight: 100
+    weight: -44
     settings:
       default_view_mode: default
       allowed_media_types: {  }
       allowed_view_modes: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: false
+    weight: -40
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -41
+    settings:
+      filter_url_length: 72
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -43
+    settings: {  }
+  video_embed_wysiwyg:
+    id: video_embed_wysiwyg
+    provider: video_embed_wysiwyg
+    status: true
+    weight: -45
+    settings: {  }
