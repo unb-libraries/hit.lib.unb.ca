@@ -110,3 +110,37 @@ h1.page-title {
 footer {
   background-color: $footer-bg-color;
 }
+
+/* Separate float image from adjacent content */
+.align-left img,
+img.float-left {
+  margin-right: .5rem;
+}
+img.float-right,
+.align-right img {
+  margin-left: .5rem;
+}
+figure {
+  &.align-left {
+    margin-right: 1rem;
+
+    img {
+      margin: 0;
+    }
+  }
+  &.align-right {
+    margin-left: 1rem;
+
+    img {
+      margin: 0;
+    }
+  }
+
+  figcaption {
+    color: $text-muted-wcag;
+    font-size: 90%;
+    line-height: 1rem;
+    margin-top: .5rem;
+  }
+}
+/* END */
