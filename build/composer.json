@@ -86,7 +86,7 @@
     ],
     "require": {
         "drupal/bootstrap4": "2.1.4",
-        "drupal/core": "8.9.10",
+        "drupal/core": "8.9.11",
         "drupal/editor_file": "1.5",
         "drupal/entity_browser": "2.5",
         "drupal/file_management": "1.x-dev",
