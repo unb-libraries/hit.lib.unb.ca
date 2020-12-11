@@ -1,0 +1,19 @@
+uuid: ce6c792d-870c-48bf-9a38-df6bebdce418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_its_director_years
+    - node.type.person
+id: node.person.field_its_director_years
+field_name: field_its_director_years
+entity_type: node
+bundle: person
+label: 'ITS Director Years'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

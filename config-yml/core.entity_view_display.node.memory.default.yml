@@ -1,0 +1,77 @@
+uuid: 8ebe2e98-e4ca-401e-bad5-dc0a7dd143f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.memory.body
+    - field.field.node.memory.field_archives_id
+    - field.field.node.memory.field_date
+    - field.field.node.memory.field_media
+    - field.field.node.memory.field_memory_type
+    - field.field.node.memory.field_people
+    - node.type.memory
+  module:
+    - datetime_range
+    - text
+    - user
+id: node.memory.default
+targetEntityType: node
+bundle: memory
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_archives_id:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_date:
+    weight: 106
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_memory_type:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_people:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

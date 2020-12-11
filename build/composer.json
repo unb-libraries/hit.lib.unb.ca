@@ -42,6 +42,9 @@
             ]
         },
         "patches": {
+            "drupal/core": {
+                "Extend Daterange functionality": "https://www.drupal.org/files/issues/2794481-50.patch"
+            },
             "drupal/samlauth": {
                 "samlauth nocache metadata": "/build/patches/samlauth_nocache_metadata.patch"
             }
@@ -96,7 +99,7 @@
         "drupal/google_analytics": "2.5",
         "drupal/health_check": "1.2",
         "drupal/media_entity_browser": "2.0-alpha3",
-        "drupal/pathauto": "1.6",
+        "drupal/pathauto": "1.8",
         "drupal/redis": "1.4",
         "drupal/samlauth": "3.0-alpha2",
         "drupal/search_api": "1.17",

@@ -1,0 +1,17 @@
+uuid: 1031d1c0-0f8d-4720-992c-51093bcc0e89
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Memory
+type: memory
+description: 'A photo, document, object, etc'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

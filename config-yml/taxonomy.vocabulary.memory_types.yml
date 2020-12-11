@@ -1,0 +1,8 @@
+uuid: 4e94784f-9804-4bd1-aa6a-c98528314e6f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Memory Types'
+vid: memory_types
+description: ''
+weight: 0

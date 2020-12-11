@@ -1,0 +1,19 @@
+uuid: 3d596646-8bc5-4a7e-b277-34b19a001f72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archives_id
+    - node.type.memory
+id: node.memory.field_archives_id
+field_name: field_archives_id
+entity_type: node
+bundle: memory
+label: 'Archives ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

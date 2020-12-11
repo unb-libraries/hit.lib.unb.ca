@@ -1,0 +1,40 @@
+uuid: 047425d6-da07-469a-8938-47d193bf4c2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.memory.body
+    - field.field.node.memory.field_archives_id
+    - field.field.node.memory.field_date
+    - field.field.node.memory.field_media
+    - field.field.node.memory.field_memory_type
+    - field.field.node.memory.field_people
+    - node.type.memory
+  module:
+    - text
+    - user
+id: node.memory.teaser
+targetEntityType: node
+bundle: memory
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_archives_id: true
+  field_date: true
+  field_media: true
+  field_memory_type: true
+  field_people: true

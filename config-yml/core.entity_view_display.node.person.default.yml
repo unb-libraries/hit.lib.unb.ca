@@ -1,0 +1,93 @@
+uuid: 978e7686-1591-4f39-a04a-210a335a909b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.body
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_affiliation_years
+    - field.field.node.person.field_department
+    - field.field.node.person.field_interview_video
+    - field.field.node.person.field_it_pioneer
+    - field.field.node.person.field_its_director
+    - field.field.node.person.field_its_director_years
+    - field.field.node.person.field_position_title
+    - field.field.node.person.field_profile_photo
+    - node.type.person
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_affiliation:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_affiliation_years:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_department:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_interview_video:
+    weight: 7
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_position_title:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_profile_photo:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_it_pioneer: true
+  field_its_director: true
+  field_its_director_years: true

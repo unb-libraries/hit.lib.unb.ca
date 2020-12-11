@@ -1,0 +1,48 @@
+uuid: c6890685-529f-49ee-8e0b-cbaae78161dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.body
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_affiliation_years
+    - field.field.node.person.field_department
+    - field.field.node.person.field_interview_video
+    - field.field.node.person.field_it_pioneer
+    - field.field.node.person.field_its_director
+    - field.field.node.person.field_its_director_years
+    - field.field.node.person.field_position_title
+    - field.field.node.person.field_profile_photo
+    - node.type.person
+  module:
+    - text
+    - user
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_affiliation: true
+  field_affiliation_years: true
+  field_department: true
+  field_interview_video: true
+  field_it_pioneer: true
+  field_its_director: true
+  field_its_director_years: true
+  field_position_title: true
+  field_profile_photo: true

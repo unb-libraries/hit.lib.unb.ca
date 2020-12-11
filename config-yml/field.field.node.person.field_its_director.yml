@@ -1,0 +1,23 @@
+uuid: e382e401-4037-43ba-8a06-d8365f9f8a1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_its_director
+    - node.type.person
+id: node.person.field_its_director
+field_name: field_its_director
+entity_type: node
+bundle: person
+label: 'ITS Director'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

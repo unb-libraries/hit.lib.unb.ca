@@ -1,0 +1,21 @@
+uuid: f3e0e485-7473-4327-81fa-109000bd22e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.memory
+  module:
+    - datetime_range
+id: node.memory.field_date
+field_name: field_date
+entity_type: node
+bundle: memory
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
