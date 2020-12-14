@@ -1,0 +1,27 @@
+uuid: 0f9b880a-a725-4316-9b2f-8fdc4ffbaf78
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 2
+is_admin: null
+permissions:
+  - 'create basic_page content'
+  - 'create memory content'
+  - 'create person content'
+  - 'delete any basic_page content'
+  - 'delete any memory content'
+  - 'delete any person content'
+  - 'delete basic_page revisions'
+  - 'delete memory revisions'
+  - 'delete own basic_page content'
+  - 'delete own memory content'
+  - 'delete own person content'
+  - 'delete person revisions'
+  - 'edit any basic_page content'
+  - 'edit any memory content'
+  - 'edit any person content'
+  - 'edit own basic_page content'
+  - 'edit own memory content'
+  - 'edit own person content'
