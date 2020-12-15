@@ -7,6 +7,7 @@ label: Editor
 weight: 2
 is_admin: null
 permissions:
+  - 'access toolbar'
   - 'create basic_page content'
   - 'create memory content'
   - 'create person content'
