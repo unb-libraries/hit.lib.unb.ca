@@ -115,10 +115,12 @@ footer {
 .align-left img,
 img.float-left {
   margin-right: .5rem;
+  margin-bottom: .5rem;
 }
 img.float-right,
 .align-right img {
   margin-left: .5rem;
+  margin-bottom: .5rem;
 }
 figure {
   &.align-left {
