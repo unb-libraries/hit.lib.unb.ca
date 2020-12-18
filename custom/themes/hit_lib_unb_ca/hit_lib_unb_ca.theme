@@ -1,0 +1,7 @@
+<?php
+
+function hit_lib_unb_ca_preprocess_image(&$variables) {
+  if ($variables['style_name'] == 'image_thumbnail') {
+    $variables['attributes']['class'][] = 'img-thumbnail';
+  }
+}

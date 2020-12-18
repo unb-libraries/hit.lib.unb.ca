@@ -2,6 +2,8 @@ uuid: cd978a0a-1f0b-4c00-8b07-0594d6cd65fc
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.image_thumbnail
   module:
     - editor
     - media
@@ -52,8 +54,10 @@ filters:
     weight: -44
     settings:
       default_view_mode: default
-      allowed_view_modes: {  }
       allowed_media_types: {  }
+      allowed_view_modes:
+        default: default
+        image_thumbnail: image_thumbnail
   filter_autop:
     id: filter_autop
     provider: filter
