@@ -213,7 +213,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure class=\"figure bg-white p-3\">\r\n  {{ field_profile_photo }}\r\n  <figcaption class=\"text-center figure-caption font-weight-bold\">\r\n    {{ title }} <span class=\"d-block pt-2\">{{ field_its_director_years }}</span>\r\n  </figcaption>\r\n</figure>"
+            text: "<figure class=\"figure bg-light p-3\">\r\n  {{ field_profile_photo }}\r\n  <figcaption class=\"text-center figure-caption font-weight-bold\">\r\n    {{ title }} <span class=\"d-block pt-2\">{{ field_its_director_years }}</span>\r\n  </figcaption>\r\n</figure>"
             make_link: false
             path: ''
             absolute: false
