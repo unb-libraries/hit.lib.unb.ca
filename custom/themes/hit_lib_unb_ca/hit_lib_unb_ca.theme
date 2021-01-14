@@ -5,3 +5,8 @@ function hit_lib_unb_ca_preprocess_image(&$variables) {
     $variables['attributes']['class'][] = 'img-thumbnail';
   }
 }
+
+function hit_lib_unb_ca_form_contact_message_share_your_memories_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#prefix'] = '<p>Do you have any memories, anecdotes, good stories of your interaction with computers, Computer Services or other technology over the years? If you do, send a note to us. We would be glad to add your experiences (and even artifacts) to our collection.</p>
+<p>Fill out this form, or contact Greg Sprague (<a href="mailto:gls@unb.ca">gls@unb.ca</a>) for more information.</p>';
+}

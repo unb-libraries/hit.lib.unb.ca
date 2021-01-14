@@ -1,0 +1,13 @@
+uuid: 77ec017b-686f-478d-8228-693cc1e4ac3f
+langcode: en
+status: true
+dependencies: {  }
+id: share_your_memories
+label: 'Share Your Memories'
+recipients:
+  - gls@unb.ca
+  - j333f@unb.ca
+reply: ''
+weight: 0
+message: 'Your message has been delivered. Thank you!'
+redirect: ''

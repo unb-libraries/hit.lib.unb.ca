@@ -1,0 +1,41 @@
+uuid: 2755480c-cb7a-4c44-a029-9b0d9a8eabed
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.share_your_memories
+id: contact_message.share_your_memories.default
+targetEntityType: contact_message
+bundle: share_your_memories
+mode: default
+content:
+  copy:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 2
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  preview:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  subject: true
