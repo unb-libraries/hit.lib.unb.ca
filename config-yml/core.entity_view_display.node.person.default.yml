@@ -32,7 +32,7 @@ content:
     region: content
   field_affiliation:
     weight: 3
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -40,7 +40,7 @@ content:
     region: content
   field_affiliation_years:
     weight: 6
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -48,7 +48,7 @@ content:
     region: content
   field_department:
     weight: 4
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -56,7 +56,7 @@ content:
     region: content
   field_interview_video:
     weight: 7
-    label: above
+    label: hidden
     settings:
       responsive: true
       width: 854
@@ -67,7 +67,7 @@ content:
     region: content
   field_position_title:
     weight: 5
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -78,7 +78,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: default
+      view_mode: image_thumbnail
       link: false
     third_party_settings: {  }
     region: content
