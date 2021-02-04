@@ -17,6 +17,6 @@ dockworker:
     push_branches:
       - dev
       - prod
-    name: unblibraries/hit.lib.unb.ca
+    name: ghcr.io/unb-libraries/hit.lib.unb.ca
     date_tag_image: true
-    repository: dockercloud
+    repository: ghcr
