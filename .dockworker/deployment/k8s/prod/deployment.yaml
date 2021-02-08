@@ -77,6 +77,18 @@ spec:
                 secretKeyRef:
                   name: newrelic
                   key: install-key
+            -
+              name: HIT_RECAPTCHA_SITE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: hit-recaptcha
+                  key: site-key
+            -
+              name: HIT_RECAPTCHA_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: hit-recaptcha
+                  key: secret-key
           image: "||DEPLOYMENTIMAGE||"
           imagePullPolicy: Always
           ports:

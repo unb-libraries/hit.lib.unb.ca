@@ -1,0 +1,7 @@
+uuid: 16b5d368-1b45-4de9-85e6-f8f59fcf2b79
+langcode: en
+status: true
+dependencies: {  }
+formId: contact_message_share_your_memories_form
+captchaType: recaptcha/reCAPTCHA
+label: contact_message_share_your_memories_form
