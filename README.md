@@ -1,14 +1,13 @@
 ![hit.lib.unb.ca screenshot](https://github.com/unb-libraries/hit.lib.unb.ca/raw/prod/.dockworker/screenshot.png "hit.lib.unb.ca screenshot")
 # [hit.lib.unb.ca](https://hit.lib.unb.ca/) : Lean Instance Repository
-[![Build Status](https://travis-ci.com/unb-libraries/hit.lib.unb.ca.svg?branch=prod)](https://travis-ci.com/unb-libraries/hit.lib.unb.ca)
+[![Build Status](https://github.com/unb-libraries/hit.lib.unb.ca/actions/workflows/test-suite.yaml/badge.svg?branch=prod)](https://github.com/unb-libraries/hit.lib.unb.ca/actions/workflows/test-suite.yaml)
 [![GitHub license](https://img.shields.io/github/license/unb-libraries/hit.lib.unb.ca)](https://github.com/unb-libraries/hit.lib.unb.ca/blob/prod/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/unb-libraries/hit.lib.unb.ca?label=lean%20repo%20size)
-[![Docker image size](https://img.shields.io/docker/image-size/unblibraries/hit.lib.unb.ca/prod?label=docker%20image%20size)](https://hub.docker.com/repository/docker/unblibraries/hit.lib.unb.ca)
 
 This repository contains the assets used to test, build, and deploy the [hit.lib.unb.ca](https://hit.lib.unb.ca) Drupal application. This repository extends the [unb-libraries/docker-drupal](https://github.com/unb-libraries/docker-drupal) base image, which deploys nginx and php-fpm in the service container.
 
-## Deploy, Develop in this Application Yourself!
-Local deployment, development and testing is accelerated via [dockworker](https://github.com/unb-libraries/dockworker), our unified framework of [Robo](https://robo.li/) commands that streamline local development of our application on Linux or OSX.
+## Deploy this Application Yourself!
+Local deployment, development and testing of hit.lib.unb.ca is easy, as we leverage [dockworker](https://github.com/unb-libraries/dockworker), our unified framework of [Robo](https://robo.li/) commands that streamline local development of our application on Linux or OSX.
 
 ### Step 1: Install Dockworker Dependencies
 In your local development environment, several 'one time' dependency installations are required to deploy all applications with dockworker. Some or all of these may already be installed in your environment.
