@@ -46,3 +46,5 @@ hidden:
   field_its_director_years: true
   field_position_title: true
   field_profile_photo: true
+  langcode: true
+  search_api_excerpt: true

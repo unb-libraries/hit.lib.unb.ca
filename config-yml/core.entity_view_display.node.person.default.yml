@@ -91,3 +91,5 @@ hidden:
   field_it_pioneer: true
   field_its_director: true
   field_its_director_years: true
+  langcode: true
+  search_api_excerpt: true

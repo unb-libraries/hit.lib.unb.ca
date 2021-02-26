@@ -1,0 +1,50 @@
+uuid: 581775f3-7214-43f1-b623-57d6509dc62c
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.person.body
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_affiliation_years
+    - field.field.node.person.field_department
+    - field.field.node.person.field_interview_video
+    - field.field.node.person.field_it_pioneer
+    - field.field.node.person.field_its_director
+    - field.field.node.person.field_its_director_years
+    - field.field.node.person.field_position_title
+    - field.field.node.person.field_profile_photo
+    - node.type.person
+  module:
+    - user
+id: node.person.search_index
+targetEntityType: node
+bundle: person
+mode: search_index
+content:
+  field_profile_photo:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: image_thumbnail
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_affiliation: true
+  field_affiliation_years: true
+  field_department: true
+  field_interview_video: true
+  field_it_pioneer: true
+  field_its_director: true
+  field_its_director_years: true
+  field_position_title: true
+  langcode: true
+  search_api_excerpt: true
