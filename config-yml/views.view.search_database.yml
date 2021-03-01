@@ -38,24 +38,25 @@ display:
           skip_access: false
           preserve_facet_query_args: false
       exposed_form:
-        type: input_required
+        type: basic
         options:
           submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Search for keywords within the database entries.'
-          text_input_required_format: basic_html
       pager:
         type: mini
         options:
-          items_per_page: 10
+          items_per_page: 12
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -64,11 +65,17 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 3
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: col-md-4
+          row_class_default: false
+          row_class_custom: row
       row:
         type: fields
         options:
@@ -370,6 +377,18 @@ display:
           fields: {  }
           plugin_id: search_api_fulltext
       sorts:
+        created:
+          id: created
+          table: search_api_index_hit_lib_unb_ca
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Most Recent'
+          plugin_id: search_api
         search_api_relevance:
           id: search_api_relevance
           table: search_api_index_hit_lib_unb_ca
@@ -378,9 +397,9 @@ display:
           group_type: group
           admin_label: ''
           order: ASC
-          exposed: false
+          exposed: true
           expose:
-            label: ''
+            label: Relevance
           plugin_id: search_api
       title: 'Search Database'
       header:
@@ -406,6 +425,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_media'
@@ -436,6 +456,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_media'
