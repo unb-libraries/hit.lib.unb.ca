@@ -271,7 +271,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure class=\"figure bg-light p-3\">\r\n{{ field_profile_photo }}{{ field_media }}\r\n<figcaption class=\"text-center figure-caption font-weight-bold\">{{ title }}</figcaption>\r\n</figure>"
+            text: "<figure class=\"figure bg-light p-3 w-100\">\r\n{{ field_profile_photo }}{{ field_media }}\r\n{% if field_profile_photo is empty and field_media is empty %}\r\n<div class=\"img-thumbnail py-5 text-dark d-flex align-items-center justify-content-center\">\r\n<i class=\"fas fa-user fa-7x\"></i>\r\n</div>\r\n{% endif %}\r\n<figcaption class=\"text-center figure-caption font-weight-bold\">{{ title }}</figcaption>\r\n</figure>"
             make_link: false
             path: ''
             absolute: false
