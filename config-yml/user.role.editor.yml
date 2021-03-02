@@ -7,6 +7,7 @@ label: Editor
 weight: 2
 is_admin: null
 permissions:
+  - 'access content overview'
   - 'access toolbar'
   - 'create basic_page content'
   - 'create memory content'
@@ -26,3 +27,4 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own memory content'
   - 'edit own person content'
+  - 'view the administration theme'
