@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_profile_photo
     - image.style.image_thumbnail
     - search_api.index.hit_lib_unb_ca
-    - system.menu.main
   module:
     - media
     - search_api
@@ -440,7 +439,7 @@ display:
       display_extenders: {  }
       path: search
       menu:
-        type: normal
+        type: none
         title: Search
         description: ''
         expanded: false
