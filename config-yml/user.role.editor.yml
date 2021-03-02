@@ -9,7 +9,10 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access toolbar'
+  - 'create audio media'
   - 'create basic_page content'
+  - 'create file media'
+  - 'create image media'
   - 'create memory content'
   - 'create person content'
   - 'delete any basic_page content'
