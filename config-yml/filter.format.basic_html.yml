@@ -64,12 +64,6 @@ filters:
     status: false
     weight: -42
     settings: {  }
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    status: false
-    weight: -40
-    settings: {  }
   filter_url:
     id: filter_url
     provider: filter
@@ -77,6 +71,12 @@ filters:
     weight: -41
     settings:
       filter_url_length: 72
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: false
+    weight: -40
+    settings: {  }
   filter_html_escape:
     id: filter_html_escape
     provider: filter

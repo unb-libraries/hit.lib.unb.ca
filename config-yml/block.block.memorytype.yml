@@ -1,0 +1,29 @@
+uuid: 7015a2ad-a727-4aa4-a6f7-f090fdc44200
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.memory_type
+  module:
+    - facets
+    - system
+  theme:
+    - hit_lib_unb_ca
+id: memorytype
+theme: hit_lib_unb_ca
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:memory_type'
+settings:
+  id: 'facet_block:memory_type'
+  label: 'Memory Type'
+  provider: facets
+  label_display: visible
+  block_id: memorytype
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }
