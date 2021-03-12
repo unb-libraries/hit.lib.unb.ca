@@ -11,7 +11,7 @@ dependencies:
     - media
     - search_api
 id: search_database
-label: 'Search Database'
+label: 'Search the HIT Archive'
 module: views
 description: ''
 tag: ''
@@ -400,7 +400,7 @@ display:
           expose:
             label: Relevance
           plugin_id: search_api
-      title: 'Search Database'
+      title: 'Search the HIT Archive'
       header:
         result:
           id: result
