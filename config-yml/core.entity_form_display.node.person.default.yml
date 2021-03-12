@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.person.field_affiliation_years
     - field.field.node.person.field_department
     - field.field.node.person.field_interview_video
-    - field.field.node.person.field_it_pioneer
     - field.field.node.person.field_its_director
     - field.field.node.person.field_its_director_years
     - field.field.node.person.field_position_title
@@ -69,13 +68,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
-    region: content
-  field_it_pioneer:
-    weight: 129
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
     region: content
   field_its_director:
     weight: 127

@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.person.field_affiliation_years
     - field.field.node.person.field_department
     - field.field.node.person.field_interview_video
-    - field.field.node.person.field_it_pioneer
     - field.field.node.person.field_its_director
     - field.field.node.person.field_its_director_years
     - field.field.node.person.field_position_title
@@ -88,7 +87,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_it_pioneer: true
   field_its_director: true
   field_its_director_years: true
   langcode: true
