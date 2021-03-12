@@ -30,4 +30,5 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own memory content'
   - 'edit own person content'
+  - 'use text format basic_html'
   - 'view the administration theme'
