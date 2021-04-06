@@ -101,7 +101,7 @@
     ],
     "require": {
         "drupal/admin_toolbar": "2.4",
-        "drupal/bootstrap4": "2.1.5",
+        "drupal/bootstrap4": "2.1.6",
         "drupal/captcha": "1.1",
         "drupal/core": "8.9.13",
         "drupal/editor_file": "1.5",
