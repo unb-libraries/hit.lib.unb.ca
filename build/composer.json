@@ -44,6 +44,9 @@
         "patches": {
             "drupal/core": {
                 "Extend Daterange functionality": "https://www.drupal.org/files/issues/2794481-50.patch"
+            },
+            "drupal/samlauth": {
+                "Ignore Role Restrictions": "/build/patches/samlauth_rolematch.patch"
             }
         }
     },
