@@ -44,6 +44,7 @@ services:
 
   drupal-solr-lib-unb-ca:
     image: ghcr.io/unb-libraries/solr-drupal:8.x-4.x
+    restart: always
     expose:
       - "8983"
     networks:
@@ -54,6 +55,7 @@ services:
 
   mailhog:
     image: mailhog/mailhog
+    restart: always
     expose:
       - "1025"
       - "8025"
