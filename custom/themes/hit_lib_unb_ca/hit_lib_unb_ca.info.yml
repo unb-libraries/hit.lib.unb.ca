@@ -1,4 +1,5 @@
 core: 8.x
+core_version_requirement: ^8 || ^9
 type: theme
 name: 'hit_lib_unb_ca'
 package: 'hit_lib_unb_ca'
