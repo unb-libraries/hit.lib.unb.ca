@@ -103,7 +103,7 @@
         }
     ],
     "require": {
-        "drupal/admin_toolbar": "3.0.2",
+        "drupal/admin_toolbar": "3.0.3",
         "drupal/bootstrap4": "2.1.13",
         "drupal/captcha": "1.2",
         "drupal/core": "9.2.6",
