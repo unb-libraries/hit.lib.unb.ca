@@ -13,3 +13,5 @@ _core:
 allow_pseudo_elements: true
 external_svg_integrity: ''
 use_duotone_file: false
+load_assets: true
+bypass_validation: false
