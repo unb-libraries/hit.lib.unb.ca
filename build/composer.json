@@ -125,7 +125,7 @@
         "drupal/samlauth": "3.3",
         "drupal/search_api": "1.21",
         "drupal/search_api_autocomplete": "1.5",
-        "drupal/search_api_solr": "4.2.3",
+        "drupal/search_api_solr": "4.2.4",
         "drupal/token": "1.10",
         "drupal/twig_tweak": "2.9",
         "drupal/video_embed_field": "2.4",
