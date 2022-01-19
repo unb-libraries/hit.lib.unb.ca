@@ -106,7 +106,7 @@
         "drupal/admin_toolbar": "3.0.3",
         "drupal/bootstrap4": "2.1.14",
         "drupal/captcha": "1.2",
-        "drupal/core": "9.3.0",
+        "drupal/core": "9.3.2",
         "drupal/editor_file": "1.6",
         "drupal/entity_browser": "2.6",
         "drupal/file_management": "1.x-dev",
