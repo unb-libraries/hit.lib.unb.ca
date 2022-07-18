@@ -117,7 +117,7 @@
     "drupal/core": "9.4.2",
     "drupal/editor_file": "1.6",
     "drupal/entity_browser": "2.7",
-    "drupal/facets": "2.0.2",
+    "drupal/facets": "2.0.4",
     "drupal/file_management": "1.x-dev",
     "drupal/fontawesome": "2.23",
     "drupal/fontawesome_iconpicker": "^2.0@RC",
