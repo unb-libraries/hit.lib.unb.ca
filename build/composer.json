@@ -51,9 +51,6 @@
     "patches": {
       "drupal/core": {
         "Extend Daterange functionality": "https://www.drupal.org/files/issues/2794481-50.patch"
-      },
-      "drupal/samlauth": {
-        "Ignore Role Restrictions": "/build/patches/samlauth_rolematch.patch"
       }
     }
   },
@@ -139,7 +136,7 @@
     "unb-libraries/colorbox": "1.x-dev",
     "unb-libraries/drupal-builder": "^9",
     "unb-libraries/font_awesome": "~5.14",
-    "unb-libraries/saml_features": "dev-8.x-1.x"
+    "unb-libraries/saml_features": "dev-9.x-1.x"
   },
   "require-dev": {
     "unb-libraries/drupal-development-libraries": "^9"
