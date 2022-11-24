@@ -23,69 +23,69 @@ bundle: person
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_affiliation:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_affiliation_years:
-    weight: 6
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 6
     region: content
   field_department:
-    weight: 4
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_interview_video:
-    weight: 7
+    type: video_embed_field_video
     label: hidden
     settings:
+      autoplay: true
       responsive: true
       width: 854
       height: 480
-      autoplay: true
     third_party_settings: {  }
-    type: video_embed_field_video
+    weight: 7
     region: content
   field_position_title:
-    weight: 5
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 5
     region: content
   field_profile_photo:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: image_thumbnail
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_its_director: true
   field_its_director_years: true

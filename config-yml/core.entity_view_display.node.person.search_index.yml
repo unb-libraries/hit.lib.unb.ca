@@ -23,18 +23,18 @@ mode: search_index
 content:
   field_profile_photo:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: image_thumbnail
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   field_affiliation: true

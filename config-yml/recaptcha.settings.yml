@@ -1,5 +1,7 @@
-site_key: HIT_RECAPTCHA_SITE_KEY
-secret_key: HIT_RECAPTCHA_SECRET_KEY
+_core:
+  default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0
+site_key: 6LcKY08aAAAAAH96ObcwVL9wKtSdLXK_9wUUPsKQ
+secret_key: 6LcKY08aAAAAAP-7hsASfMhdMNBlyIgm1si-PJU6
 verify_hostname: false
 use_globally: false
 widget:
@@ -8,5 +10,3 @@ widget:
   size: ''
   tabindex: 0
   noscript: false
-_core:
-  default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0

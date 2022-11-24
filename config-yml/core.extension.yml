@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
   block: 0
@@ -18,7 +20,6 @@ module:
   editor_file: 0
   entity_browser: 0
   entity_browser_entity_form: 0
-  externalauth: 10
   facets: 0
   field: 0
   field_ui: 0
@@ -39,16 +40,13 @@ module:
   media: 0
   media_entity_browser: 0
   media_library: 0
-  menu_link_content: 1
   menu_ui: 0
-  minimal: 1000
   mysql: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
-  pathauto: 1
   quickedit: 0
   rdf: 0
   recaptcha: 0
@@ -67,8 +65,12 @@ module:
   user: 0
   video_embed_field: 0
   video_embed_wysiwyg: 0
-  views: 10
   views_ui: 0
+  menu_link_content: 1
+  pathauto: 1
+  externalauth: 10
+  views: 10
+  minimal: 1000
 theme:
   stark: 0
   stable: 0
@@ -78,5 +80,3 @@ theme:
   bootstrap4: 0
   hit_lib_unb_ca: 0
 profile: minimal
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

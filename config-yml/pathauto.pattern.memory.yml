@@ -11,12 +11,12 @@ pattern: '/memory/[node:title]-[node:nid]'
 selection_criteria:
   fc501b92-9e3a-4129-84c2-03e05923f19d:
     id: node_type
-    bundles:
-      memory: memory
     negate: false
+    uuid: fc501b92-9e3a-4129-84c2-03e05923f19d
     context_mapping:
       node: node
-    uuid: fc501b92-9e3a-4129-84c2-03e05923f19d
+    bundles:
+      memory: memory
 selection_logic: and
 weight: -5
 relationships: {  }

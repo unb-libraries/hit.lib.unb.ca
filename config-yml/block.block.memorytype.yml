@@ -18,12 +18,12 @@ plugin: 'facet_block:memory_type'
 settings:
   id: 'facet_block:memory_type'
   label: 'Memory Type'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: memorytype
 visibility:
   request_path:
     id: request_path
-    pages: /search
     negate: false
     context_mapping: {  }
+    pages: /search
