@@ -123,7 +123,7 @@
     "drupal/honeypot": "2.1.2",
     "drupal/media_entity_browser": "2.0-alpha4",
     "drupal/pathauto": "1.11",
-    "drupal/recaptcha": "3.1",
+    "drupal/recaptcha": "3.2",
     "drupal/redis": "1.6",
     "drupal/samlauth": "3.8",
     "drupal/search_api": "1.28",
