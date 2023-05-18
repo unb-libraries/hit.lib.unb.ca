@@ -23,12 +23,12 @@
     }
   ],
   "require-dev": {
-    "drupal/bootstrap4": "2.1.14",
-    "unb-libraries/dockworker-drupal": "^5"
+    "drupal/bootstrap4": "^2",
+    "unb-libraries/dockworker-drupal": "6.x-dev"
   },
   "scripts": {
     "post-update-cmd": [
-      "vendor/bin/dockworker dockworker:git:setup-hooks"
+      "vendor/bin/dockworker git:setup-hooks"
     ]
   }
 }

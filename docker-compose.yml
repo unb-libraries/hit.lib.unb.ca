@@ -14,7 +14,7 @@ services:
       - hit.lib.unb.ca
     volumes:
       - drupal-data:/app/html/sites/default
-      - ./config-yml:/app/configuration
+      - ./configuration:/app/configuration
       - ./custom/modules:/app/html/modules/custom
       - ./custom/themes:/app/html/themes/custom
       - ./tests:/app/tests
@@ -23,7 +23,7 @@ services:
       - drupal-redis-lib-unb-ca
       - drupal-solr-lib-unb-ca
   drupal-mysql-lib-unb-ca:
-    image: mysql:5.7
+    image: mariadb:10.11
     restart: unless-stopped
     command: mysqld --skip-name-resolve --max_allowed_packet=64M
     env_file:
@@ -35,7 +35,7 @@ services:
     volumes:
       - mysql-data:/var/lib/mysql
   drupal-redis-lib-unb-ca:
-    image: redis:5-alpine
+    image: redis:7-alpine
     restart: unless-stopped
     expose:
       - "6379"
@@ -44,7 +44,7 @@ services:
     env_file:
       - ./env/redis.env
   drupal-solr-lib-unb-ca:
-    image: ghcr.io/unb-libraries/solr-drupal:8.x-4.x
+    image: ghcr.io/unb-libraries/solr-drupal:8.x-10.x
     restart: unless-stopped
     expose:
       - "8983"
