@@ -10,6 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: unb-libraries/install-dockworker-composite-action@v2
+      - name: Remove Dockworker-Installed git Hooks
+        run: rm -f .git/hooks/commit-msg .git/hooks/pre-commit
       - name: Update Drupal and Dependencies
         shell: 'script -q -e -c "bash {0}"'
         run: vendor/bin/dockworker update
