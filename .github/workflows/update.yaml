@@ -24,6 +24,7 @@ jobs:
           author: UNB Libraries CodeBot <libsystems@unb.ca>
           signoff: false
           branch: drupal-updates
+          add-paths: build/composer.*
           delete-branch: true
           title: 'Drupal Updates'
           body: |
