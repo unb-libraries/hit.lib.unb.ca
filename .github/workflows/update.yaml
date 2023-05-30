@@ -2,6 +2,8 @@ name: Update hit.lib.unb.ca
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 5 * * *'
 
 jobs:
   deploy:
