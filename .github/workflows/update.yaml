@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  createPullRequest:
+  update-drupal:
+    name: Update Drupal
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
