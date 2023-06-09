@@ -29,43 +29,55 @@ dockworker:
       license: MIT
       holder: University of New Brunswick Libraries
     shell:
-      shell: /bin/sh
-    workflows:
-      vcs:
-        type: github
-        owner: unb-libraries
-        name: hit.lib.unb.ca
-      jira:
-        project_keys:
-          - HIT
-      ci:
-        actions:
-          - source: dockworker-drupal
-            type: deployment-workflow
-      image:
-        parent: ghcr.io/unb-libraries/drupal:9.x-2.x-unblib
-        repositories:
-          - name: GitHub
-            push_branches:
-              - dev
-              - prod
-            image_name: ghcr.io/unb-libraries/hit.lib.unb.ca
-      k8s:
-        deployments:
-          - name: hit-lib-unb-ca
-            namespaces:
-              - dev
-              - prod
-        e2e_tests:
-          - id: core
-            frequency: '*/5 * * * *'
-            source_files:
-              - .dockworker/tests/e2e/hit.lib.unb.ca.yml
-            namespaces:
-              - prod
-      local:
-        deployments:
-          - name: hit.lib.unb.ca
-        additional_hostnames:
-          - hit.lib.unb.ca
-          - hit.lib.unb.ca.local
+      path: /bin/sh
+  endpoints:
+    env:
+      - dev
+      - prod
+    deployments:
+      hit-lib-unb-ca:
+        default: true
+        managed: true
+        name: hit-lib-unb-ca
+      drupal-mysql-lib-unb-ca:
+        managed: false
+        name: mysql
+      drupal-redis-lib-unb-ca:
+        managed: false
+        name: redis
+      drupal-solr-lib-unb-ca:
+        managed: false
+        name: solr
+  workflows:
+    vcs:
+      type: github
+      owner: unb-libraries
+      name: hit.lib.unb.ca
+    jira:
+      project_keys:
+        - HIT
+    ci:
+      actions:
+        - source: dockworker-drupal
+          type: deployment-workflow
+    image:
+      parent: ghcr.io/unb-libraries/drupal:9.x-2.x-unblib
+      repositories:
+        - name: GitHub
+          push_branches:
+            - dev
+            - prod
+          image_name: ghcr.io/unb-libraries/hit.lib.unb.ca
+      e2e_tests:
+        - id: core
+          frequency: '*/5 * * * *'
+          source_files:
+            - .dockworker/tests/e2e/hit.lib.unb.ca.yml
+          namespaces:
+            - prod
+    local:
+      deployments:
+        - name: hit.lib.unb.ca
+      additional_hostnames:
+        - hit.lib.unb.ca
+        - hit.lib.unb.ca.local

@@ -1,9 +1,9 @@
 services:
-  hit.lib.unb.ca:
+  hit-lib-unb-ca:
     build:
       context: .
     restart: unless-stopped
-    container_name: hit.lib.unb.ca
+    container_name: hit-lib-unb-ca
     expose:
       - "80"
     ports:
