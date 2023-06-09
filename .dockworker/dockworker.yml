@@ -76,8 +76,6 @@ dockworker:
           namespaces:
             - prod
     local:
-      deployments:
-        - name: hit.lib.unb.ca
       additional_hostnames:
         - hit.lib.unb.ca
         - hit.lib.unb.ca.local
