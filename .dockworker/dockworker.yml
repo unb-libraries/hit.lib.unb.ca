@@ -56,18 +56,13 @@ dockworker:
     jira:
       project_keys:
         - HIT
-    ci:
-      actions:
-        - source: dockworker-drupal
-          type: deployment-workflow
     image:
-      parent: ghcr.io/unb-libraries/drupal:9.x-2.x-unblib
-      repositories:
-        - name: GitHub
-          push_branches:
-            - dev
-            - prod
-          image_name: ghcr.io/unb-libraries/hit.lib.unb.ca
+      name: ghcr.io/unb-libraries/hit.lib.unb.ca
+      parent: ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
+      repository: GitHub
+      push-branches:
+        - dev
+        - prod
       e2e_tests:
         - id: core
           frequency: '*/5 * * * *'
