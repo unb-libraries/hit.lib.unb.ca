@@ -3,7 +3,7 @@ name: Update hit.lib.unb.ca
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 5 * * 1,4'
+    - cron: '44 6 * * 1,4'
 
 jobs:
   deploy:
