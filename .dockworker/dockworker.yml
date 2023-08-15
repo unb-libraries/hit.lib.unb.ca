@@ -69,7 +69,3 @@ dockworker:
             - .dockworker/tests/e2e/hit.lib.unb.ca.yml
           namespaces:
             - prod
-    local:
-      additional_hostnames:
-        - hit.lib.unb.ca
-        - hit.lib.unb.ca.local
