@@ -2675,21 +2675,20 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "3.0.0-rc18",
+            "version": "3.0.0-rc19",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "3.0.0-rc18"
+                "reference": "3.0.0-rc19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-3.0.0-rc18.zip",
-                "reference": "3.0.0-rc18",
-                "shasum": "6d81fe0a589bf314444cf217689f1e26231ac6df"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-3.0.0-rc19.zip",
+                "reference": "3.0.0-rc19",
+                "shasum": "d8976940dd3f85412ba5e274af15fbcdd22ee27a"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
-                "drupal/rat": "^1.0.0@stable",
                 "php": ">=7.1"
             },
             "require-dev": {
@@ -2698,8 +2697,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-rc18",
-                    "datestamp": "1704671776",
+                    "version": "3.0.0-rc19",
+                    "datestamp": "1704729077",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2982,39 +2981,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/quickedit"
             }
-        },
-        {
-            "name": "drupal/rat",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/rat.git",
-                "reference": "28202b02262a39ac8dbbfd43696b67c0c8c46b71"
-            },
-            "require": {
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "drupal/core": "^9.4",
-                "drupal/core-dev": "^9.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\rat\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "gpl-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Merlin",
-                    "email": "merlin@geeks4change.net"
-                }
-            ],
-            "time": "2023-07-19T20:22:22+00:00"
         },
         {
             "name": "drupal/rdf",
@@ -6014,16 +5980,16 @@
         },
         {
             "name": "solarium/solarium",
-            "version": "6.3.4",
+            "version": "6.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solariumphp/solarium.git",
-                "reference": "7a7232f69caa35c966ca0eb96ce8b1c5606c82fc"
+                "reference": "ae4ea592dc92d2be4dfd0a329f1ffbe3cbd01cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/7a7232f69caa35c966ca0eb96ce8b1c5606c82fc",
-                "reference": "7a7232f69caa35c966ca0eb96ce8b1c5606c82fc",
+                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/ae4ea592dc92d2be4dfd0a329f1ffbe3cbd01cf3",
+                "reference": "ae4ea592dc92d2be4dfd0a329f1ffbe3cbd01cf3",
                 "shasum": ""
             },
             "require": {
@@ -6076,9 +6042,9 @@
             ],
             "support": {
                 "issues": "https://github.com/solariumphp/solarium/issues",
-                "source": "https://github.com/solariumphp/solarium/tree/6.3.4"
+                "source": "https://github.com/solariumphp/solarium/tree/6.3.5"
             },
-            "time": "2023-12-04T11:56:37+00:00"
+            "time": "2024-01-10T08:36:53+00:00"
         },
         {
             "name": "symfony/console",
@@ -10552,16 +10518,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "57b2cc67fb4416e8484db37a3d8502ac8fb3c0d6"
+                "reference": "a5a001a71b3b7ba99d552fc9490d31e0cc27422b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/57b2cc67fb4416e8484db37a3d8502ac8fb3c0d6",
-                "reference": "57b2cc67fb4416e8484db37a3d8502ac8fb3c0d6",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/a5a001a71b3b7ba99d552fc9490d31e0cc27422b",
+                "reference": "a5a001a71b3b7ba99d552fc9490d31e0cc27422b",
                 "shasum": ""
             },
             "require": {
@@ -10636,7 +10602,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.2.4"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.2.5"
             },
             "funding": [
                 {
@@ -10652,7 +10618,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-14T22:47:32+00:00"
+            "time": "2024-01-10T16:56:53+00:00"
         },
         {
             "name": "mikey179/vfsstream",
@@ -10987,16 +10953,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.7.3",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419"
+                "reference": "fad452781b3d774e3337b0c0b245dd8e5a4455fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419",
-                "reference": "3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/fad452781b3d774e3337b0c0b245dd8e5a4455fc",
+                "reference": "fad452781b3d774e3337b0c0b245dd8e5a4455fc",
                 "shasum": ""
             },
             "require": {
@@ -11039,9 +11005,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.3"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.8.0"
             },
-            "time": "2023-08-12T11:01:26+00:00"
+            "time": "2024-01-11T11:49:22+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -11257,16 +11223,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.54",
+            "version": "1.10.55",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "3e25f279dada0adc14ffd7bad09af2e2fc3523bb"
+                "reference": "9a88f9d18ddf4cf54c922fbeac16c4cb164c5949"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3e25f279dada0adc14ffd7bad09af2e2fc3523bb",
-                "reference": "3e25f279dada0adc14ffd7bad09af2e2fc3523bb",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9a88f9d18ddf4cf54c922fbeac16c4cb164c5949",
+                "reference": "9a88f9d18ddf4cf54c922fbeac16c4cb164c5949",
                 "shasum": ""
             },
             "require": {
@@ -11315,7 +11281,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-05T15:50:47+00:00"
+            "time": "2024-01-08T12:32:40+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -13108,16 +13074,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.8.0",
+            "version": "3.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "5805f7a4e4958dbb5e944ef1e6edae0a303765e7"
+                "reference": "14f5fff1e64118595db5408e946f3a22c75807f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/5805f7a4e4958dbb5e944ef1e6edae0a303765e7",
-                "reference": "5805f7a4e4958dbb5e944ef1e6edae0a303765e7",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/14f5fff1e64118595db5408e946f3a22c75807f7",
+                "reference": "14f5fff1e64118595db5408e946f3a22c75807f7",
                 "shasum": ""
             },
             "require": {
@@ -13127,11 +13093,11 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.3.4"
             },
             "bin": [
-                "bin/phpcs",
-                "bin/phpcbf"
+                "bin/phpcbf",
+                "bin/phpcs"
             ],
             "type": "library",
             "extra": {
@@ -13184,7 +13150,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-12-08T12:32:31+00:00"
+            "time": "2024-01-11T20:47:48+00:00"
         },
         {
             "name": "symfony/browser-kit",
