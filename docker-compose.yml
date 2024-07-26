@@ -66,6 +66,8 @@ services:
       - "4094:8025"
     networks:
       - hit.lib.unb.ca
+    profiles:
+      - mailhog
 networks:
   hit.lib.unb.ca:
     name: hit.lib.unb.ca
