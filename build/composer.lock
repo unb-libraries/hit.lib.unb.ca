@@ -1564,17 +1564,17 @@
         },
         {
             "name": "drupal/colorbox",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "2.1.0"
+                "reference": "2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "6801e500f821b4cfd2519e452a66f1d99172b3d1"
+                "url": "https://ftp.drupal.org/files/projects/colorbox-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "59f2fc48ba12ebc91293f7d33138ae6a7761b4b1"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
@@ -1585,8 +1585,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1722959496",
+                    "version": "2.1.1",
+                    "datestamp": "1723487172",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2615,29 +2615,29 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "2.1.3"
+                "reference": "2.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-2.1.3.zip",
-                "reference": "2.1.3",
-                "shasum": "101105029a10a574ef6017824182500ab9905856"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-2.1.4.zip",
+                "reference": "2.1.4",
+                "shasum": "adf76c3520c0e458177dbe6d638aa2d6ae40a95b"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
             },
             "require-dev": {
-                "drupal/rules": "^3.0"
+                "drupal/rules": "^3.x-dev"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.3",
-                    "datestamp": "1695604754",
+                    "version": "2.1.4",
+                    "datestamp": "1723489062",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3111,17 +3111,17 @@
         },
         {
             "name": "drupal/recaptcha",
-            "version": "3.3.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/recaptcha.git",
-                "reference": "8.x-3.3"
+                "reference": "8.x-3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/recaptcha-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "376331ed5a0761d5414d294d6778bce4c308d6d5"
+                "url": "https://ftp.drupal.org/files/projects/recaptcha-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "95fa7ac5dd064ea6a1c14fc4881778bf68200598"
             },
             "require": {
                 "drupal/captcha": "^1.15 || ^2.0",
@@ -3131,8 +3131,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1720755549",
+                    "version": "8.x-3.4",
+                    "datestamp": "1723563033",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3173,11 +3173,11 @@
                     "homepage": "https://www.drupal.org/user/395439"
                 },
                 {
-                    "name": "Liam Morland",
+                    "name": "liam morland",
                     "homepage": "https://www.drupal.org/user/493050"
                 },
                 {
-                    "name": "RobLoach",
+                    "name": "robloach",
                     "homepage": "https://www.drupal.org/user/61114"
                 },
                 {
