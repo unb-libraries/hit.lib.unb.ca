@@ -2,10 +2,10 @@ FROM ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
 MAINTAINER UNB Libraries <libsupport@unb.ca>
 
 # Install additional OS packages.
-ENV ADDITIONAL_OS_PACKAGES postfix php-ldap php81-pecl-redis
-ENV DRUPAL_SITE_ID hit
-ENV DRUPAL_SITE_URI hit.lib.unb.ca
-ENV DRUPAL_SITE_UUID d5f8f4e2-fb53-42e5-a71e-c6b48f4a766f
+ENV ADDITIONAL_OS_PACKAGES="postfix php-ldap php81-pecl-redis"
+ENV DRUPAL_SITE_ID="hit"
+ENV DRUPAL_SITE_URI="hit.lib.unb.ca"
+ENV DRUPAL_SITE_UUID="d5f8f4e2-fb53-42e5-a71e-c6b48f4a766f"
 
 # Build application.
 COPY ./build/ /build/
