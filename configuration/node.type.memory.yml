@@ -11,7 +11,7 @@ third_party_settings:
 name: Memory
 type: memory
 description: 'A photo, document, object, etc'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Memory Types'
 vid: memory_types
-description: ''
+description: null
 weight: 0
+new_revision: false
