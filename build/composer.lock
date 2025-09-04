@@ -2056,17 +2056,17 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "2.13.0",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "8.x-2.13"
+                "reference": "8.x-2.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.13.zip",
-                "reference": "8.x-2.13",
-                "shasum": "9c31caed2602a5cb582cb4f1e1feaac44cbbc21b"
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.14.zip",
+                "reference": "8.x-2.14",
+                "shasum": "b4cbdfdb6b091a29d30f2ff9151a88bfe563d73f"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -2087,8 +2087,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.13",
-                    "datestamp": "1739701403",
+                    "version": "8.x-2.14",
+                    "datestamp": "1756901393",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2158,7 +2158,7 @@
         },
         {
             "name": "drupal/entity_browser_entity_form",
-            "version": "2.13.0",
+            "version": "2.14.0",
             "require": {
                 "drupal/core": "^10.2 || ^11",
                 "drupal/entity_browser": "*",
@@ -2167,8 +2167,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.13",
-                    "datestamp": "1739701403",
+                    "version": "8.x-2.14",
+                    "datestamp": "1756901393",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11441,16 +11441,16 @@
         },
         {
             "name": "open-telemetry/sem-conv",
-            "version": "1.36.0",
+            "version": "1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sem-conv.git",
-                "reference": "60dd18fd21d45e6f4234ecab89c14021b6e3de9a"
+                "reference": "8da7ec497c881e39afa6657d72586e27efbd29a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sem-conv/zipball/60dd18fd21d45e6f4234ecab89c14021b6e3de9a",
-                "reference": "60dd18fd21d45e6f4234ecab89c14021b6e3de9a",
+                "url": "https://api.github.com/repos/opentelemetry-php/sem-conv/zipball/8da7ec497c881e39afa6657d72586e27efbd29a1",
+                "reference": "8da7ec497c881e39afa6657d72586e27efbd29a1",
                 "shasum": ""
             },
             "require": {
@@ -11494,7 +11494,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-08-04T03:22:08+00:00"
+            "time": "2025-09-03T12:08:10+00:00"
         },
         {
             "name": "phar-io/manifest",
