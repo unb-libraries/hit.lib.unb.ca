@@ -1210,26 +1210,26 @@
         },
         {
             "name": "drupal/bootstrap4",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap4.git",
-                "reference": "3.0.6"
+                "reference": "3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap4-3.0.6.zip",
-                "reference": "3.0.6",
-                "shasum": "0732ba1ce28795b41279ca774b9b35d7b2d08704"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap4-3.0.7.zip",
+                "reference": "3.0.7",
+                "shasum": "c4989d6fe4b0d33a07c47f4a7bad976a9ced30c3"
             },
             "require": {
-                "drupal/core": "^10.2 || ^11.0"
+                "drupal/core": "^10.2 || ^11"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "3.0.6",
-                    "datestamp": "1725013833",
+                    "version": "3.0.7",
+                    "datestamp": "1767794815",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
