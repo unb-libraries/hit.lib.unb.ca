@@ -98,6 +98,18 @@
       "package": {
         "dist": {
           "type": "zip",
+          "url": "https://github.com/unb-libraries/upstream-library-mirror/raw//master/file_management/file_management.zip"
+        },
+        "name": "unb-libraries/file_management",
+        "type": "drupal-module",
+        "version": "2.x-dev"
+      },
+      "type": "package"
+    },
+    {
+      "package": {
+        "dist": {
+          "type": "zip",
           "url": "https://github.com/FortAwesome/Font-Awesome/archive/5.14.0.zip"
         },
         "extra": {
@@ -159,6 +171,7 @@
     "drupal/video_embed_field": "^2",
     "appolodev/vanilla-icon-picker": "^1",
     "unb-libraries/colorbox": "1.x-dev",
+    "unb-libraries/file_management": "^2",
     "unb-libraries/font_awesome": "~5.14",
     "unb-libraries/saml_features": "dev-10.x-1.x",
     "unb-libraries/composer-drupal-scaffold": "^10"
