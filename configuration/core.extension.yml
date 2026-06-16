@@ -6,7 +6,7 @@ module:
   block_content: 0
   breakpoint: 0
   captcha: 0
-  ckeditor: 0
+  ckeditor5: 0
   colorbox: 0
   comment: 0
   config: 0
@@ -26,7 +26,6 @@ module:
   file_management: 0
   filter: 0
   fontawesome: 0
-  fontawesome_iconpicker: 0
   google_analytics: 0
   health_check: 0
   help: 0
