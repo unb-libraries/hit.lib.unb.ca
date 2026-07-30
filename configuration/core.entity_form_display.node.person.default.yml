@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.person.field_affiliation
     - field.field.node.person.field_affiliation_years
     - field.field.node.person.field_department
-    - field.field.node.person.field_interview_video
+    - field.field.node.person.field_interview_media
     - field.field.node.person.field_its_director
     - field.field.node.person.field_its_director_years
     - field.field.node.person.field_position_title
@@ -17,7 +17,6 @@ dependencies:
     - media_library
     - path
     - text
-    - video_embed_field
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -63,11 +62,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_interview_video:
-    type: video_embed_field_textfield
+  field_interview_media:
+    type: media_library_widget
     weight: 130
     region: content
-    settings: {  }
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_its_director:
     type: boolean_checkbox
@@ -151,4 +151,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_interview_video: true

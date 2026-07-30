@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.person.field_affiliation
     - field.field.node.person.field_affiliation_years
     - field.field.node.person.field_department
-    - field.field.node.person.field_interview_video
+    - field.field.node.person.field_interview_media
     - field.field.node.person.field_its_director
     - field.field.node.person.field_its_director_years
     - field.field.node.person.field_position_title
@@ -16,7 +16,6 @@ dependencies:
   module:
     - text
     - user
-    - video_embed_field
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -53,14 +52,12 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-  field_interview_video:
-    type: video_embed_field_video
+  field_interview_media:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      autoplay: true
-      responsive: true
-      width: 854
-      height: 480
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 7
     region: content
@@ -87,6 +84,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_interview_video: true
   field_its_director: true
   field_its_director_years: true
   langcode: true

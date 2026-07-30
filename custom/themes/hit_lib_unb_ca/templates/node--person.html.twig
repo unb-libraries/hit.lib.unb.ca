@@ -132,9 +132,9 @@
 {{ content.body }}
   </div>
 </div>
-{% if node.field_interview_video is not empty %}
+{% if node.field_interview_media is not empty %}
 <h2>Interview</h2>
-{{ content.field_interview_video }}
+{{ content.field_interview_media }}
 {% endif %}
   </div>
 {{  drupal_view('people_memories', 'default', node.id) }}

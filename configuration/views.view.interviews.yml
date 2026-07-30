@@ -5,14 +5,14 @@ dependencies:
   config:
     - field.storage.node.field_affiliation
     - field.storage.node.field_affiliation_years
-    - field.storage.node.field_interview_video
     - image.style.image_thumbnail
     - node.type.person
     - system.menu.main
   module:
+    - image
+    - media
     - node
     - user
-    - video_embed_field
 id: interviews
 label: Interviews
 module: views
@@ -40,7 +40,7 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -103,7 +103,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -166,7 +166,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -220,19 +220,21 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_interview_video:
-          id: field_interview_video
-          table: node__field_interview_video
-          field: field_interview_video
-          relationship: none
+        thumbnail__target_id:
+          id: thumbnail__target_id
+          table: media_field_data
+          field: thumbnail__target_id
+          relationship: field_interview_media
           group_type: group
           admin_label: ''
+          entity_type: media
+          entity_field: thumbnail
           plugin_id: field
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: "<figure class=\"figure bg-light p-3\">\r\n  {{ field_interview_video }}\r\n  <figcaption class=\"text-center figure-caption font-weight-bold\">\r\n    {{ title }} \r\n    {% if field_affiliation or field_affiliation_years %}\r\n    <span class=\"d-block pt-2\">{{ field_affiliation }} {{ field_affiliation_years }}</span>\r\n    {% endif %}\r\n  </figcaption>\r\n</figure>"
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -269,17 +271,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: video_embed_field_colorbox
+          click_sort_column: target_id
+          type: image
           settings:
-            autoplay: false
-            responsive: true
-            width: 854
-            height: 480
+            image_link: ''
             image_style: image_thumbnail
-            link_image_to: content
-            modal_max_width: 854
-          group_column: value
+            image_loading:
+              attribute: lazy
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -354,16 +353,19 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_interview_video_value:
-          id: field_interview_video_value
-          table: node__field_interview_video
-          field: field_interview_video_value
+        field_interview_media_target_id:
+          id: field_interview_media_target_id
+          table: node__field_interview_media
+          field: field_interview_media_target_id
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: string
+          plugin_id: numeric
           operator: 'not empty'
-          value: ''
+          value:
+            min: ''
+            max: ''
+            value: ''
           group: 1
           exposed: false
           expose:
@@ -380,6 +382,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
             placeholder: ''
           is_grouped: false
           group_info:
@@ -414,7 +418,16 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        field_interview_media:
+          id: field_interview_media
+          table: node__field_interview_media
+          field: field_interview_media
+          relationship: none
+          group_type: group
+          admin_label: 'field_interview_media: Media'
+          plugin_id: standard
+          required: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -428,7 +441,6 @@ display:
       tags:
         - 'config:field.storage.node.field_affiliation'
         - 'config:field.storage.node.field_affiliation_years'
-        - 'config:field.storage.node.field_interview_video'
   page_1:
     id: page_1
     display_title: Page
@@ -451,4 +463,3 @@ display:
       tags:
         - 'config:field.storage.node.field_affiliation'
         - 'config:field.storage.node.field_affiliation_years'
-        - 'config:field.storage.node.field_interview_video'

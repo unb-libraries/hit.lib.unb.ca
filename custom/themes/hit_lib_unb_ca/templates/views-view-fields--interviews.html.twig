@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Interviews view row: video thumbnail with a title/affiliation caption.
+ *
+ * The thumbnail image links to the person's page. It can't use the image
+ * formatter's own "Link image to" setting because the thumbnail field is
+ * pulled in via a relationship to the referenced Media entity, so "Content"
+ * there resolves to the Media entity (linking to /media/{id}/edit) rather
+ * than the node — so the link is built here from the row's own node entity
+ * instead.
+ */
+#}
+{% set node_url = path('entity.node.canonical', {'node': row._entity.id}) %}
+<figure class="figure bg-light p-3 w-100">
+  <a href="{{ node_url }}">{{ fields.thumbnail__target_id.content }}</a>
+  <figcaption class="text-center figure-caption font-weight-bold">
+    {{ fields.title.content }}
+    {% set has_affiliation = (fields.field_affiliation.content|render|trim) or (fields.field_affiliation_years.content|render|trim) %}
+    {% if has_affiliation %}
+      <span class="d-block pt-2">{{ fields.field_affiliation.content }} {{ fields.field_affiliation_years.content }}</span>
+    {% endif %}
+  </figcaption>
+</figure>

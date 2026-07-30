@@ -1,1 +1,34 @@
 // Overrides go here
+
+// Drupal core's Media entity template renders a plain class of "media"
+// (e.g. `media media--type-remote-video`), which collides with Bootstrap 4's
+// unrelated ".media" Media Object component (display: flex). That flex
+// context leaves the field wrapper below it without a determinate width for
+// the responsive video box (below) to size against. Reset layout only for
+// Drupal's Media entity wrapper (identified by its media--type-* modifier
+// class), leaving any actual Bootstrap Media Object markup elsewhere
+// untouched.
+.media[class*="media--type-"] {
+  display: block;
+}
+
+// Give the oEmbed video field a responsive 16:9 aspect-ratio box, matching
+// the 854x480 (16:9) max_width/max_height configured on the remote_video
+// media display. CSS width:100%/height:auto does not reliably derive an
+// iframe's aspect ratio from its width/height attributes the way it does
+// for <img>, so use the classic padding-bottom aspect-ratio-box technique
+// instead (the same approach Bootstrap 4's .embed-responsive-16by9 uses).
+.field--name-field-media-oembed-video .field__item {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.media-oembed-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
