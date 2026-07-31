@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9d79ea159c21948dedd943e2f75ae50",
+    "content-hash": "ef06ec69e00876b910618855a78faa5f",
     "packages": [
         {
             "name": "appolodev/vanilla-icon-picker",
@@ -1283,70 +1283,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor5_icons",
                 "issues": "https://drupal.org/project/issues/ckeditor5_icons"
-            }
-        },
-        {
-            "name": "drupal/colorbox",
-            "version": "2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "2.2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-2.2.1.zip",
-                "reference": "2.2.1",
-                "shasum": "73f339870ae48c40a0373708fd84bb5602f4b4ea"
-            },
-            "require": {
-                "drupal/core": "^10 || ^11"
-            },
-            "suggest": {
-                "turbojettechnologies/colorbox": "The Colorbox library is required to use the drupal/colorbox module."
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.2.1",
-                    "datestamp": "1782926202",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10 || ^11"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Paul McKibben",
-                    "homepage": "https://www.drupal.org/u/paulmckibben",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Former Maintainer"
-                },
-                {
-                    "name": "Fredrik Jonsson",
-                    "homepage": "https://www.drupal.org/u/frjo",
-                    "role": "Former Maintainer"
-                }
-            ],
-            "description": "A light-weight, customizable lightbox plugin for jQuery.",
-            "homepage": "https://www.drupal.org/project/colorbox",
-            "support": {
-                "source": "https://git.drupalcode.org/project/colorbox",
-                "issues": "https://www.drupal.org/project/issues/colorbox"
             }
         },
         {
@@ -9070,18 +9006,6 @@
             "time": "2026-07-03T20:44:34+00:00"
         },
         {
-            "name": "unb-libraries/colorbox",
-            "version": "1.x-dev",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jackmoore/colorbox/archive/1.x.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "colorbox"
-            }
-        },
-        {
             "name": "unb-libraries/composer-drupal-scaffold",
             "version": "11.0.0",
             "source": {
@@ -9646,7 +9570,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "unb-libraries/colorbox": 20,
         "unb-libraries/saml_features": 20
     },
     "prefer-stable": true,

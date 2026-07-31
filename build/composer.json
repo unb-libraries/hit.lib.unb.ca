@@ -123,21 +123,6 @@
       "type": "package"
     },
     {
-      "package": {
-        "dist": {
-          "type": "zip",
-          "url": "https://github.com/jackmoore/colorbox/archive/1.x.zip"
-        },
-        "extra": {
-          "installer-name": "colorbox"
-        },
-        "name": "unb-libraries/colorbox",
-        "type": "drupal-library",
-        "version": "1.x-dev"
-      },
-      "type": "package"
-    },
-    {
       "type": "vcs",
       "url": "https://github.com/unb-libraries/fontawesome_iconpicker"
     }
@@ -151,7 +136,6 @@
     "drupal/bootstrap4": "^3",
     "drupal/captcha": "^1",
     "drupal/ckeditor5_icons":"^1",
-    "drupal/colorbox": "^2",
     "drupal/editor_file": "^2",
     "drupal/entity_browser": "^2",
     "drupal/facets": "^3",
@@ -170,7 +154,6 @@
     "drupal/twig_tweak": "^3",
     "drupal/video_embed_field": "^3",
     "appolodev/vanilla-icon-picker": "^1",
-    "unb-libraries/colorbox": "1.x-dev",
     "unb-libraries/file_management": "^2",
     "unb-libraries/font_awesome": "~5.14",
     "unb-libraries/saml_features": "dev-10.x-1.x",
