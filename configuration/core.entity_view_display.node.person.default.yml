@@ -84,7 +84,6 @@ content:
     weight: 0
     region: content
 hidden:
-  field_interview_video: true
   field_its_director: true
   field_its_director_years: true
   langcode: true
