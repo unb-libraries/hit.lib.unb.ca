@@ -7,13 +7,36 @@ dependencies:
   module:
     - editor
     - media
-    - video_embed_wysiwyg
 _core:
   default_config_hash: uf2SHb9XN0LzMPIBg6indJkQ0x3SQszWrPA2imxqmv0
 name: 'Basic HTML'
 format: basic_html
 weight: 0
 filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: -46
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: -49
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: -48
+    settings: {  }
   filter_html:
     id: filter_html
     provider: filter
@@ -23,17 +46,11 @@ filters:
       allowed_html: '<a href class id target title aria-controls aria-expanded aria-selected hreflang data-entity-substitution data-entity-type data-entity-uuid data-toggle role> <address class> <blockquote cite> <br> <button aria-controls aria-expanded aria-haspopup aria-label class data-dismiss data-reference data-target data-toggle id type> <caption class> <cite> <code> <div class data-parent id role aria-labelledby> <dd class id> <dl class id> <drupal-entity alt class title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <drupal-media data-align data-caption data-entity-type data-entity-uuid data-view-mode> <dt class id> <em class> <h2 class id> <h3 class id> <h4 class id> <h5 class id> <h6 class id> <hr class> <img class src alt width height data-entity-type data-entity-uuid data-align data-caption> <li class id> <ol class id start type> <p class id> <span aria-hidden class> <strong> <sub> <sup> <table class id> <tbody class> <td class colspan id rowspan> <tfoot> <th class colspan id rowspan scope> <thead class> <tr class id> <ul class id type role>'
       filter_html_help: false
       filter_html_nofollow: false
-  filter_align:
-    id: filter_align
+  filter_html_escape:
+    id: filter_html_escape
     provider: filter
-    status: true
-    weight: -49
-    settings: {  }
-  filter_caption:
-    id: filter_caption
-    provider: filter
-    status: true
-    weight: -48
+    status: false
+    weight: -43
     settings: {  }
   filter_html_image_secure:
     id: filter_html_image_secure
@@ -41,12 +58,19 @@ filters:
     status: true
     weight: -47
     settings: {  }
-  editor_file_reference:
-    id: editor_file_reference
-    provider: editor
-    status: true
-    weight: -46
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: false
+    weight: -40
     settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -41
+    settings:
+      filter_url_length: 72
   media_embed:
     id: media_embed
     provider: media
@@ -58,34 +82,3 @@ filters:
         default: default
         image_thumbnail: image_thumbnail
       allowed_media_types: {  }
-  filter_autop:
-    id: filter_autop
-    provider: filter
-    status: false
-    weight: -42
-    settings: {  }
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: false
-    weight: -41
-    settings:
-      filter_url_length: 72
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    status: false
-    weight: -40
-    settings: {  }
-  filter_html_escape:
-    id: filter_html_escape
-    provider: filter
-    status: false
-    weight: -43
-    settings: {  }
-  video_embed_wysiwyg:
-    id: video_embed_wysiwyg
-    provider: video_embed_wysiwyg
-    status: true
-    weight: -45
-    settings: {  }
