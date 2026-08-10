@@ -152,7 +152,6 @@
     "drupal/search_api_solr": "^4",
     "drupal/token": "^1",
     "drupal/twig_tweak": "^3",
-    "drupal/video_embed_field": "^3",
     "appolodev/vanilla-icon-picker": "^1",
     "unb-libraries/file_management": "^2",
     "unb-libraries/font_awesome": "~5.14",
