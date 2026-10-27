@@ -8,12 +8,14 @@ set -euo pipefail
 
 SASS_VERSION=1.62.1
 
-# PHP 8.3 plus the extensions dockworker requires; ext-yaml is not on the stock runner image.
-sudo apt-get update -qq
-sudo apt-get install -y -qq --no-install-recommends \
-    php8.3-cli php8.3-curl php8.3-gd php8.3-mbstring php8.3-xml php8.3-yaml php8.3-zip unzip
+# The distribution's PHP (dockworker needs 8.3+) plus the extensions it requires; ext-yaml is
+# not on the stock runner image. Unversioned packages, because the amd64 and arm64 runners can
+# be on different Ubuntu releases (ubuntu-latest is 26.04; ubuntu-24.04-arm is 24.04).
+sudo apt-get update -q
+sudo apt-get install -y -q --no-install-recommends \
+    php-cli php-curl php-gd php-mbstring php-xml php-yaml php-zip unzip
 if ! command -v composer >/dev/null; then
-    sudo apt-get install -y -qq --no-install-recommends composer
+    sudo apt-get install -y -q --no-install-recommends composer
 fi
 php --version
 composer --version
