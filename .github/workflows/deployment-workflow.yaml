@@ -15,7 +15,7 @@ jobs:
       deploy-branches: '["dev","prod"]'
       image-name: 'ghcr.io/unb-libraries/hit.lib.unb.ca'
       k8s-deployment-name: 'hit-lib-unb-ca'
-      pre-build-command: 'bash .github/scripts/build-themes.sh'
+      build-themes: true
     secrets:
       KUBE_CONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
