@@ -18,6 +18,7 @@ jobs:
       build-themes: true
       platforms: linux/amd64
       pre-build-command: 'mkdir -p custom/extra && echo hi > custom/extra/x.txt'
+      pre-build-outputs: 'custom/extra/*.txt'
     secrets:
       KUBE_CONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
