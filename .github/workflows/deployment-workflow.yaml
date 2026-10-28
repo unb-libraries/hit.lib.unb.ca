@@ -17,6 +17,7 @@ jobs:
       k8s-deployment-name: 'hit-lib-unb-ca'
       build-themes: true
       platforms: linux/amd64
+      pre-build-command: 'mkdir -p custom/extra && echo hi > custom/extra/x.txt'
     secrets:
       KUBE_CONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
