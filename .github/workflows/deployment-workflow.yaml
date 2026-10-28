@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    uses: unb-libraries/github-workflows/.github/workflows/build-push-deploy-notify.yaml@1.x
+    uses: unb-libraries/github-workflows/.github/workflows/build-push-deploy-notify.yaml@harden
     with:
       check-logs: true
       log-check-profile: 'drupal'
@@ -16,6 +16,7 @@ jobs:
       image-name: 'ghcr.io/unb-libraries/hit.lib.unb.ca'
       k8s-deployment-name: 'hit-lib-unb-ca'
       build-themes: true
+      platforms: linux/amd64
     secrets:
       KUBE_CONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
