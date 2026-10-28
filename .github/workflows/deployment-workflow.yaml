@@ -12,12 +12,12 @@ concurrency:
 
 jobs:
   deploy:
-    uses: unb-libraries/github-workflows/.github/workflows/build-push-deploy-notify.yaml@harden
+    uses: unb-libraries/github-workflows/.github/workflows/build-push-deploy-notify.yaml@1.x
     with:
       branch-env-map: '{"dev":"dev","prod":"prod"}'
       deploy-branches: '["dev","prod"]'
       image-name: 'ghcr.io/unb-libraries/hit.lib.unb.ca'
-      k8s-deployment-name: 'hit-lib-unb-ca-nope'
+      k8s-deployment-name: 'hit-lib-unb-ca'
       build-themes: true
       check-logs: true
       log-check-profile: 'drupal'
