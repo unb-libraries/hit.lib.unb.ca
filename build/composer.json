@@ -128,14 +128,14 @@
     }
   ],
   "require": {
-    "drupal/core-composer-scaffold": "^11",
-    "drupal/core-recommended": "^11",
-    "drupal/core": "^11",
-    "drupal/redis": "^1",
+    "appolodev/vanilla-icon-picker": "^1",
     "drupal/admin_toolbar": "^3",
     "drupal/bootstrap4": "^3",
     "drupal/captcha": "^1",
-    "drupal/ckeditor5_icons":"^1",
+    "drupal/ckeditor5_icons": "^1",
+    "drupal/core": "^11",
+    "drupal/core-composer-scaffold": "^11",
+    "drupal/core-recommended": "^11",
     "drupal/editor_file": "^2",
     "drupal/entity_browser": "^2",
     "drupal/facets": "^3",
@@ -146,17 +146,18 @@
     "drupal/media_entity_browser": "^3",
     "drupal/pathauto": "^1",
     "drupal/recaptcha": "^3",
+    "drupal/redis": "^1",
     "drupal/samlauth": "^3",
     "drupal/search_api": "^1",
     "drupal/search_api_autocomplete": "^1",
     "drupal/search_api_solr": "^4",
+    "drupal/simple_sitemap": "^4",
     "drupal/token": "^1",
     "drupal/twig_tweak": "^3",
-    "appolodev/vanilla-icon-picker": "^1",
+    "unb-libraries/composer-drupal-scaffold": "^11",
     "unb-libraries/file_management": "^2",
     "unb-libraries/font_awesome": "~5.14",
-    "unb-libraries/saml_features": "dev-10.x-1.x",
-    "unb-libraries/composer-drupal-scaffold": "^11"
+    "unb-libraries/saml_features": "dev-10.x-1.x"
   },
   "require-dev": {
     "unb-libraries/drupal-development-libraries": "^11"
